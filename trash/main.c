@@ -1,17 +1,18 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-unsigned char password [4] =
-{
-  // 0     1     2     3	
-	0xB7, 0x7E, 0xBE, 0xDE,
-};
+bool arraysEqual(char arr1[], char arr2[], int n);
+void taking_password(void);
+void disable_10(void);
+void actual_main(void);
+int set_password(void);
 
-unsigned char password_input [4] =
-{
-  // 0     1     2     3	
-	0xB7, 0x7E, 0xBE, 0xDE,
-};
+unsigned char password [4];
+unsigned char password_input [4];
+int counter_sleep;
+
+unsigned char password [4];
+unsigned char password_input [4];
 
 bool arraysEqual(char arr1[], char arr2[], int n) {
     for (int i = 0; i < n; i++) {
@@ -21,7 +22,6 @@ bool arraysEqual(char arr1[], char arr2[], int n) {
     }
     return true;
 }
-
 
 int main(){
 
@@ -54,6 +54,7 @@ int main(){
                 }
                 else {
                     loop--
+
                 }
             }
 
@@ -96,5 +97,3 @@ int main(){
     return 0;
     
 }
-
-

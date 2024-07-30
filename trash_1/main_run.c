@@ -76,7 +76,7 @@ void taking_password(){
             unsigned char i;
 
             printf("\n Loop Number: %d :", loop);
-            printf("\n Enter an Character: ");
+            printf("\n Enter an Character_setpassword: ");
             i = _getch();
             
 
